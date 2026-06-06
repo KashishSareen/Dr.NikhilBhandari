@@ -376,37 +376,149 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu fixed inset-0 z-40 bg-white/97 backdrop-blur-2xl hidden flex-col items-center justify-center gap-7" id="mobile-menu">
-  <button class="mobile-close absolute top-6 right-6 text-lg cursor-pointer text-text-mid bg-none border-none" onclick="closeMobileMenu()"><i class="fas fa-times"></i></button>
-  <a href="#hero" onclick="closeMobileMenu()" class="text-text-dark no-underline">Home</a>
-  <a href="#about" onclick="closeMobileMenu()" class="text-text-dark no-underline">About</a>
-  <a href="#services" onclick="closeMobileMenu()" class="text-text-dark no-underline">Services</a>
-  <a href="#why" onclick="closeMobileMenu()" class="text-text-dark no-underline">Why Us</a>
-  <a href="#testimonials" onclick="closeMobileMenu()" class="text-text-dark no-underline">Testimonials</a>
-  <a href="#locations" onclick="closeMobileMenu()" class="text-text-dark no-underline">Our Clinics</a>
-  <a href="#contact" onclick="closeMobileMenu()" class="text-text-dark no-underline">Contact</a>
-  <button onclick="closeMobileMenu(); openApptModal();" class="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-full text-base font-semibold cursor-pointer border-none shadow-[0_4px_18px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5">Book Appointment</button>
+
+  <!-- CLOSE BUTTON -->
+  <button
+    class="mobile-close absolute top-6 right-6 text-lg cursor-pointer text-text-mid bg-none border-none"
+    onclick="closeMobileMenu()">
+
+    <i class="fas fa-times"></i>
+
+  </button>
+
+
+  <!-- LINKS -->
+  <a href="#hero" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    Home
+  </a>
+
+  <a href="#about" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    About
+  </a>
+  
+  <a href="#special" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+  Specialties
+</a>
+
+  <a href="#services" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    Services
+  </a>
+
+  <a href="#why" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    Why Us
+  </a>
+
+  
+  <a href="#locations" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    Our Clinics
+  </a>
+
+  <a href="#contact" onclick="closeMobileMenu()" class="text-text-dark no-underline text-lg font-medium">
+    Contact
+  </a>
+
+  <!-- BUTTON -->
+  <button
+    onclick="closeMobileMenu(); openApptModal();"
+    class="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-secondary text-white px-5 py-3 rounded-full text-base font-semibold cursor-pointer border-none shadow-[0_4px_18px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5">
+
+    Book Appointment
+
+  </button>
+
 </div>
 
 <!-- NAVBAR -->
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-30 px-4 md:px-[5%] flex items-center justify-between bg-[#e3dfde] backdrop-blur-lg border-b border-primary/10 transition-all duration-300" style="height:64px">
-  <a href="#hero" class="flex items-center gap-2.5 no-underline">
-    <img src="/images/drLOGO.jpeg" alt="Dr. Nikhil Bhandari" class="logo-icon h-[52px] w-auto md:h-[70px] object-contain">
-  </a>
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 right-0 z-30 px-3 sm:px-4 md:px-[5%] flex items-center justify-between bg-[#e3dfde] backdrop-blur-lg border-b border-primary/10 transition-all duration-300"
+  style="height:72px">
+
+  <!-- LOGO -->
+
+<a
+  href="#hero"
+  class="flex items-center no-underline">
+
+  <img
+    src="/images/drLOGO.jpeg"
+    alt="Dr. Nikhil Bhandari"
+    class="w-[190px] sm:w-[230px] md:w-[270px] h-auto object-contain"
+  >
+
+</a>
+  <!-- DESKTOP NAV -->
   <ul class="nav-links hidden md:flex items-center gap-7 list-none">
-    <li><a href="#hero" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">Home</a></li>
-    <li><a href="#about" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">About</a></li>
-    <li><a href="#special" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">Specialties</a></li>
-    <li><a href="#services" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">Services</a></li>
-    <li><a href="#why" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">Why Us</a></li>
-    <li><a href="#locations" class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">Our Clinics</a></li>
-    <li><button onclick="openApptModal()" id="nav-book-btn" class="nav-cta bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-full text-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] transition-transform duration-300 border-none cursor-pointer hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)] hover:-translate-y-0.5">Book Appointment</button></li>
+
+    <li>
+      <a href="#hero"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href="#about"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        About
+      </a>
+    </li>
+
+    <li>
+      <a href="#special"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        Specialties
+      </a>
+    </li>
+
+    <li>
+      <a href="#services"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        Services
+      </a>
+    </li>
+
+    <li>
+      <a href="#why"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        Why Us
+      </a>
+    </li>
+
+    <li>
+      <a href="#locations"
+        class="no-underline text-sm font-medium text-text-mid relative transition-colors duration-300">
+        Our Clinics
+      </a>
+    </li>
+
+    <li>
+      <button
+        onclick="openApptModal()"
+        id="nav-book-btn"
+        class="nav-cta bg-gradient-to-br from-primary to-secondary text-white px-5 py-2.5 rounded-full text-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] transition-transform duration-300 border-none cursor-pointer hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)] hover:-translate-y-0.5">
+
+        Book Appointment
+
+      </button>
+    </li>
+
   </ul>
-  <!-- HAMBURGER: flex on mobile, hidden on md+ -->
-  <button class="flex md:hidden flex-col justify-center items-center gap-[5px] cursor-pointer p-2 bg-primary-light rounded-xl border-none" onclick="openMobileMenu()" aria-label="Open menu">
+
+  <!-- HAMBURGER -->
+  <button
+    class="flex md:hidden flex-col justify-center items-center gap-[5px] cursor-pointer p-2 bg-primary-light rounded-xl border-none"
+    onclick="openMobileMenu()"
+    aria-label="Open menu">
+
     <span class="w-6 h-[2px] bg-primary rounded block transition-all duration-300"></span>
+
     <span class="w-6 h-[2px] bg-primary rounded block transition-all duration-300"></span>
+
     <span class="w-4 h-[2px] bg-primary rounded block transition-all duration-300"></span>
+
   </button>
+
 </nav>
 
 <!-- HERO -->
@@ -1437,41 +1549,42 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gradient-to-br from-[#3d3a42] to-[#2f2d35] text-white/80 py-20 px-[5%] mt-24 overflow-hidden relative">
+<footer class="bg-gradient-to-br from-[#3d3a42] to-[#2f2d35] text-white/80 py-14 md:py-16 px-[5%] mt-24 overflow-hidden relative">
 
   <!-- TOP BLUR -->
   <div class="absolute top-0 right-0 w-72 h-72 bg-[#c99ba3]/10 blur-3xl rounded-full"></div>
 
   <div class="relative z-10">
 
-    <div class="footer-grid grid md:grid-cols-2 lg:grid-cols-4 gap-14 mb-14">
+    <div class="footer-grid grid md:grid-cols-2 lg:grid-cols-4 gap-14 mb-12">
 
       <!-- BRAND -->
       <div class="footer-brand">
 
         <!-- LOGO -->
-       <div class="flex items-center gap-4 mb-5">
+        <div class="flex justify-center sm:justify-start mb-5">
 
-  <!-- LOGO CONTAINER -->
-  <div class="w-[220px] sm:w-[260px] h-[90px] flex items-center justify-center ">
+          <!-- LOGO CONTAINER -->
+          <div
+            class="bg-[#e3dfde] rounded-2xl px-4 py-3 sm:px-5 sm:py-4 shadow-lg w-[240px] sm:w-[280px] md:w-[250px] lg:w-[270px] flex items-center justify-center">
 
-    <img
-      src="/images/drLOGO.jpeg"
-      alt="Dr Nikhil Logo"
-      class="w-full h-full object-contain"
-    >
+            <img
+              src="/images/drLOGO.jpeg"
+              alt="Dr Nikhil Logo"
+              class="w-full h-auto object-contain">
 
-  </div>
+          </div>
 
-</div>
+        </div>
+
         <!-- TAGLINE -->
-        <p class="text-sm text-white/60 leading-[1.9] font-light max-w-sm">
+        <p class="text-sm text-white/60 leading-[1.9] font-light max-w-sm text-center sm:text-left">
           Providing compassionate, evidence-based pediatric & neonatal care to families in Andheri East for over 14 years.
           Every child deserves the best start.
         </p>
 
         <!-- SOCIAL -->
-        <div class="footer-social flex gap-4 mt-7">
+        <div class="footer-social flex gap-4 mt-7 justify-center sm:justify-start">
 
           <a href="mailto:drnikhil.b@gmail.com"
             class="w-12 h-12 rounded-2xl bg-white/10 hover:bg-[#c99ba3] flex items-center justify-center text-white text-base no-underline transition-all duration-300 border border-white/10 hover:-translate-y-1 shadow-lg">
@@ -1508,7 +1621,7 @@
       </div>
 
       <!-- QUICK LINKS -->
-      <div class="footer-col">
+      <div class="footer-col text-center md:text-left">
 
         <h4 class="text-sm font-bold uppercase tracking-[3px] text-white mb-7">
           Quick Links
@@ -1518,7 +1631,7 @@
 
           <li>
             <a href="#hero"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               Home
@@ -1528,7 +1641,7 @@
 
           <li>
             <a href="#about"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               About Dr. Bhandari
@@ -1538,7 +1651,7 @@
 
           <li>
             <a href="#special"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               Special Interests
@@ -1548,7 +1661,7 @@
 
           <li>
             <a href="#services"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               Our Services
@@ -1558,7 +1671,7 @@
 
           <li>
             <a href="#why"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               Why Choose Us
@@ -1567,8 +1680,18 @@
           </li>
 
           <li>
+            <a href="#locations"
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
+
+              <i class="fas fa-chevron-right text-[10px] text-primary"></i>
+              Our Clinic
+
+            </a>
+          </li>
+
+          <li>
             <a href="#contact"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-center justify-center md:justify-start gap-3">
 
               <i class="fas fa-chevron-right text-[10px] text-primary"></i>
               Book Appointment
@@ -1581,7 +1704,7 @@
       </div>
 
       <!-- SERVICES -->
-      <div class="footer-col">
+      <div class="footer-col text-center md:text-left">
 
         <h4 class="text-sm font-bold uppercase tracking-[3px] text-white mb-7">
           Services
@@ -1606,7 +1729,7 @@
       </div>
 
       <!-- CONTACT -->
-      <div class="footer-col">
+      <div class="footer-col text-center md:text-left">
 
         <h4 class="text-sm font-bold uppercase tracking-[3px] text-white mb-7">
           Contact
@@ -1616,7 +1739,7 @@
 
           <li>
             <a href="mailto:drnikhil.b@gmail.com"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start justify-center md:justify-start gap-3">
 
               <i class="fas fa-envelope text-primary mt-1"></i>
               drnikhil.b@gmail.com
@@ -1627,7 +1750,7 @@
           <li>
             <a href="https://instagram.com/dr.nikhil.pedia_tricks"
               target="_blank"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start justify-center md:justify-start gap-3">
 
               <i class="fab fa-instagram text-primary mt-1"></i>
               @dr.nikhil.pedia_tricks
@@ -1637,7 +1760,7 @@
 
           <li>
             <a href="tel:+918433500510"
-              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start gap-3">
+              class="text-[15px] text-white/60 hover:text-white no-underline transition-all duration-300 flex items-start justify-center md:justify-start gap-3">
 
               <i class="fas fa-phone text-primary mt-1"></i>
               +91 84335 00510
@@ -1652,17 +1775,18 @@
     </div>
 
     <!-- BOTTOM -->
-  <div class="footer-bottom border-t border-white/10 pt-8 pr-20 sm:pr-24 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/40 text-center md:text-left">
-  <div>
-    © 2026 <span class="text-primary font-medium">Dr. Nikhil Bhandari</span>.
-    All Rights Reserved.
-  </div>
+    <div class="footer-bottom border-t border-white/10 pt-8 pr-0 sm:pr-6 md:pr-16 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/40 text-center md:text-left">
 
-  <div class="md:text-right">
-    Compassionate Care for Every Child.
-  </div>
+      <div>
+        © 2026 <span class="text-primary font-medium">Dr. Nikhil Bhandari</span>.
+        All Rights Reserved.
+      </div>
 
-</div>
+      <div class="md:text-right">
+        Compassionate Care for Every Child.
+      </div>
+
+    </div>
 
   </div>
 
