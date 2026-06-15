@@ -301,24 +301,24 @@
       }
 
       /* Testimonial Slider */
-      .testimonial-track {
+      /* .testimonial-track {
         display: flex;
         transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .testimonial-card {
+      } */
+      /* .testimonial-card {
         flex: 0 0 100%;
         min-width: 0;
-      }
-      @media (min-width: 768px) {
+      } */
+      /* @media (min-width: 768px) {
         .testimonial-card {
           flex: 0 0 50%;
         }
-      }
-      @media (min-width: 1024px) {
+      } */
+      /* @media (min-width: 1024px) {
         .testimonial-card {
           flex: 0 0 33.333%;
-        }
-      }
+        } */
+      /* }
       .testimonial-dot {
         width: 8px;
         height: 8px;
@@ -330,8 +330,8 @@
       .testimonial-dot.active {
         background: #c99ba3;
         width: 24px;
-        border-radius: 4px;
-      }
+        border-radius: 4px; */
+      /* } */
 
       @media (max-width: 380px) {
         .faq-question {
@@ -611,18 +611,18 @@
     <!-- NAVBAR -->
     <nav
       id="navbar"
-      class="fixed top-0 left-0 right-0 z-30 px-3 sm:px-4 md:px-[5%] flex items-center justify-between bg-[#e3dfde] backdrop-blur-lg border-b border-primary/10 transition-all duration-300"
-      style="height: 72px"
+      class="fixed top-0 left-0 right-0 z-30 px-4 sm:px-5 md:px-[5%] flex items-center justify-between bg-[#e3dfde] backdrop-blur-lg border-b border-primary/10 transition-all duration-300"
+      style="height: 80px"
     >
       <!-- LOGO -->
 
-      <a href="#hero" class="flex items-center no-underline">
-        <img
-          src="/images/drLOGO.jpeg"
-          alt="Dr. Nikhil Bhandari"
-          class="w-[190px] sm:w-[230px] md:w-[270px] h-auto object-contain"
-        />
-      </a>
+     <a href="#hero" class="flex items-center no-underline">
+  <img
+    src="/images/drLogo.jpg"
+    alt="Dr. Nikhil Bhandari"
+    class="w-[170px] sm:w-[220px] md:w-[320px] h-auto object-contain "
+  />
+</a>
       <!-- DESKTOP NAV -->
       <ul class="nav-links hidden md:flex items-center gap-7 list-none">
         <li>
@@ -692,22 +692,14 @@
 
       <!-- HAMBURGER -->
       <button
-        class="flex md:hidden flex-col justify-center items-center gap-[5px] cursor-pointer p-2 bg-primary-light rounded-xl border-none"
-        onclick="openMobileMenu()"
-        aria-label="Open menu"
-      >
-        <span
-          class="w-6 h-[2px] bg-primary rounded block transition-all duration-300"
-        ></span>
-
-        <span
-          class="w-6 h-[2px] bg-primary rounded block transition-all duration-300"
-        ></span>
-
-        <span
-          class="w-4 h-[2px] bg-primary rounded block transition-all duration-300"
-        ></span>
-      </button>
+  class="flex md:hidden flex-col justify-center items-center gap-[6px] cursor-pointer p-3 bg-primary-light rounded-xl border-none"
+  onclick="openMobileMenu()"
+  aria-label="Open menu"
+>
+  <span class="w-7 h-[2px] bg-primary rounded block"></span>
+  <span class="w-7 h-[2px] bg-primary rounded block"></span>
+  <span class="w-5 h-[2px] bg-primary rounded block"></span>
+</button>
     </nav>
 
     <!-- HERO -->
@@ -1870,216 +1862,103 @@
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-   <section
-      id="testimonials"
-      class="py-16 md:py-24 px-4 sm:px-6 md:px-[5%] bg-gradient-to-br from-primary-light/30 via-white to-secondary-light/30 overflow-hidden"
-    >
-      <div class="max-w-6xl mx-auto">
-        <!-- Section Header -->
-        <div class="text-center mb-10 md:mb-14" data-aos="fade-up">
-          <div
-            class="section-tag inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-widest uppercase text-primary mb-3"
-          >
-            <div class="w-6 h-px bg-primary"></div>
-            Testimonials
-            <div class="w-6 h-px bg-primary"></div>
-          </div>
-          <h2
-            class="section-title font-display text-[clamp(1.5rem,5vw,2.8rem)] leading-tight text-text-dark mb-4 px-2"
-          >
-            What <span class="text-primary">Parents</span> Say
-          </h2>
-          <p
-            class="section-desc text-text-mid text-sm sm:text-base max-w-2xl mx-auto font-light px-3"
-          >
-            Thousands of families trust Dr. Nikhil Bhandari for their children's
-            health. Here's what some of them have to say.
-          </p>
-        </div>
-
-        <!-- Slider Wrapper -->
-        <div class="relative px-2 sm:px-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="overflow-hidden rounded-2xl" id="testimonial-slider-wrap">
-            <div class="testimonial-track gap-0" id="testimonial-track">
-              <!-- Card 1 -->
-              <div class="testimonial-card px-1 sm:px-2 md:px-3">
-                <div
-                  class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-primary/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4"
-                >
-                  
-                  <div class="flex justify-center -mt-2 sm:-mt-3">
-                    <div
-                      class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-primary to-secondary-dark flex items-center justify-center"
-                    >
-                      <img src="/images/kesler_and_kaelynn.jpeg" alt="Valencia Pereira" class="w-full h-full object-cover">
-                    </div>
-                  </div>
-                  
-                  <div class="flex items-center justify-center gap-1 text-primary text-sm">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
-                  </div>
-                  <p
-                    class="text-text-mid text-xs sm:text-sm leading-relaxed text-center"
-                  >
-                    "Dr. Nikhil is a highly skilled and compassionate
-                    pediatrician. Our family has trusted him for over 7 years,
-                    and his expertise, prompt support, and caring approach have
-                    always given us confidence and peace of mind. We highly
-                    recommend Dr. Nikhil Bhandari."
-                  </p>
-                  <div
-                    class="flex flex-col items-center gap-1 pt-2 border-t border-primary/10 text-center"
-                  >
-                    <div class="font-semibold text-text-dark text-sm sm:text-base">
-                      Valencia Pereira
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="testimonial-card px-1 sm:px-2 md:px-3">
-                <div
-                  class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-primary/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4"
-                >
-               
-                  <div class="flex justify-center -mt-2 sm:-mt-3">
-                    <div
-                      class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-secondary to-secondary-dark flex items-center justify-center"
-                    >
-                      <img src="/images/Yug.jpeg" alt="Neha" class="w-full h-full object-cover object-top">
-                    </div>
-                  </div>
-                  
-                  <div class="flex items-center justify-center gap-1 text-primary text-sm">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
-                  </div>
-                  <p
-                    class="text-text-mid text-xs sm:text-sm leading-relaxed text-center"
-                  >
-                    "Dr. Nikhil Bhandari has been our trusted pediatrician since
-                    our son's birth. He is knowledgeable, caring, and always
-                    available when needed. His guidance and support have made
-                    our parenting journey much easier. We highly recommend him
-                    to any parent seeking a reliable pediatrician."
-                  </p>
-                  <div
-                    class="flex flex-col items-center gap-1 pt-2 border-t border-primary/10 text-center"
-                  >
-                    <div class="font-semibold text-text-dark text-sm sm:text-base">
-                      Neha
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="testimonial-card px-1 sm:px-2 md:px-3">
-                <div
-                  class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-primary/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4"
-                >
-             
-                  <div class="flex justify-center -mt-2 sm:-mt-3">
-                    <div
-                      class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-primary-mid to-primary flex items-center justify-center"
-                    >
-                      <img src="/images/Sarah.jpeg" alt="Malecia Vadassery" class="w-full h-full object-cover object-center">
-                    </div>
-                  </div>
-                  
-                  <div class="flex items-center justify-center gap-1 text-primary text-sm">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
-                  </div>
-                  <p
-                    class="text-text-mid text-xs sm:text-sm leading-relaxed text-center"
-                  >
-                    "Dr. Nikhil Bhandari has been my daughter's pediatrician for
-                    the past 6 years. He is caring, patient, and always takes
-                    the time to listen to our concerns. His prompt availability,
-                    clear guidance, and dedication have made him a trusted part
-                    of our family's healthcare journey. We feel fortunate to
-                    have such a skilled and compassionate doctor."
-                  </p>
-                  <div
-                    class="flex flex-col items-center gap-1 pt-2 border-t border-primary/10 text-center"
-                  >
-                    <div class="font-semibold text-text-dark text-sm sm:text-base">
-                      Malecia Vadassery
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 4 -->
-              <div class="testimonial-card px-1 sm:px-2 md:px-3">
-                <div
-                  class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-primary/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4"
-                >
-             
-                  <div class="flex justify-center -mt-2 sm:-mt-3">
-                    <div
-  class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg"
+  <section
+  id="testimonials"
+  class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-[5%] bg-gradient-to-br from-[#fbe9ec]/30 via-white to-[#f4f0e9]/30 overflow-hidden"
 >
-  <img
-    src="/images/nysa_and_araina.jpeg"
-    alt="Priya Sharma"
-    class="w-full h-full object-cover object-top"
-  />
-</div>
-                  </div>
-                  
-                  <div class="flex items-center justify-center gap-1 text-primary text-sm">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <p
-                    class="text-text-mid text-xs sm:text-sm leading-relaxed text-center"
-                  >
-                    "We have trusted Dr. Nikhil for the past 11 years. His prompt guidance, caring nature, and clear explanations always reassure us. Our daughters are comfortable with him, and we know they are in safe hands."
-                  </p>
-                  <div
-                    class="flex flex-col items-center gap-1 pt-2 border-t border-primary/10 text-center"
-                  >
-                    <div class="font-semibold text-text-dark text-sm sm:text-base">
-                      Noel Fernandes
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Prev / Next Buttons  -->
-          <button
-            id="testimonial-prev"
-            aria-label="Previous testimonial"
-            class="testimonial-nav-btn absolute top-1/2 -translate-y-1/2 -left-2 sm:-left-4 md:-left-5 w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 rounded-full bg-white border border-primary/20 text-primary shadow-[0_4px_16px_rgba(201,155,163,0.25)] flex items-center justify-center text-xs sm:text-sm transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-[0_6px_20px_rgba(201,155,163,0.4)] z-10"
-          >
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button
-            id="testimonial-next"
-            aria-label="Next testimonial"
-            class="testimonial-nav-btn absolute top-1/2 -translate-y-1/2 -right-2 sm:-right-4 md:-right-5 w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 rounded-full bg-white border border-primary/20 text-primary shadow-[0_4px_16px_rgba(201,155,163,0.25)] flex items-center justify-center text-xs sm:text-sm transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-[0_6px_20px_rgba(201,155,163,0.4)] z-10"
-          >
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-
-        <!-- Dots -->
-        <div
-          class="flex items-center justify-center gap-1.5 sm:gap-2 mt-5 sm:mt-7"
-          id="testimonial-dots"
-        ></div>
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-8 sm:mb-10 md:mb-14">
+      <div class="inline-flex items-center justify-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#c99ba3] mb-3">
+        <div class="w-6 h-px bg-[#c99ba3]"></div>
+        Testimonials
+        <div class="w-6 h-px bg-[#c99ba3]"></div>
       </div>
-    </section>
+      <h2 class="font-display text-[clamp(1.5rem,5vw,2.8rem)] leading-tight text-[#2e2a28] mb-3 sm:mb-4 px-2 font-bold">
+        What <span class="text-[#c99ba3]">Parents</span> Say
+      </h2>
+      <p class="text-[#5f5b58] text-sm sm:text-base max-w-2xl mx-auto font-light px-3">
+        Thousands of families trust Dr. Nikhil Bhandari for their children's
+        health. Here's what some of them have to say.
+      </p>
+    </div>
+
+    <!-- Simple Grid Layout - Fully Responsive (320px and up) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-[#c99ba3]/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4 transition-all duration-300 hover:shadow-[0_8px_30px_rgba(201,155,163,0.2)]">
+        <div class="flex justify-center -mt-2 sm:-mt-3">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-[#c99ba3] to-[#b2808a] flex items-center justify-center">
+            <img src="/images/kesler_and_kaelynn.jpeg" alt="Valencia Pereira" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-1 text-[#c99ba3] text-xs sm:text-sm">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#5f5b58] text-xs sm:text-sm leading-relaxed text-center">
+          "Dr. Nikhil is a highly skilled and compassionate pediatrician. Our family has trusted him for over 7 years, and his expertise, prompt support, and caring approach have always given us confidence and peace of mind. We highly recommend Dr. Nikhil Bhandari."
+        </p>
+        <div class="flex flex-col items-center gap-1 pt-2 border-t border-[#c99ba3]/10 text-center">
+          <div class="font-semibold text-[#2e2a28] text-sm sm:text-base">Valencia Pereira</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-[#c99ba3]/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4 transition-all duration-300 hover:shadow-[0_8px_30px_rgba(201,155,163,0.2)]">
+        <div class="flex justify-center -mt-2 sm:-mt-3">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-[#dbb0b8] to-[#b2808a] flex items-center justify-center">
+            <img src="/images/Yug.jpeg" alt="Neha" class="w-full h-full object-cover object-top">
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-1 text-[#c99ba3] text-xs sm:text-sm">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#5f5b58] text-xs sm:text-sm leading-relaxed text-center">
+          "Dr. Nikhil Bhandari has been our trusted pediatrician since our son's birth. He is knowledgeable, caring, and always available when needed. His guidance and support have made our parenting journey much easier. We highly recommend him to any parent seeking a reliable pediatrician."
+        </p>
+        <div class="flex flex-col items-center gap-1 pt-2 border-t border-[#c99ba3]/10 text-center">
+          <div class="font-semibold text-[#2e2a28] text-sm sm:text-base">Neha</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-[#c99ba3]/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4 transition-all duration-300 hover:shadow-[0_8px_30px_rgba(201,155,163,0.2)]">
+        <div class="flex justify-center -mt-2 sm:-mt-3">
+          <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-3 border-white shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden bg-gradient-to-br from-[#dbb0b8] to-[#c99ba3] flex items-center justify-center">
+            <img src="/images/Sarah.jpeg" alt="Malecia Vadassery" class="w-full h-full object-cover object-center">
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-1 text-[#c99ba3] text-xs sm:text-sm">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-[#5f5b58] text-xs sm:text-sm leading-relaxed text-center">
+          "Dr. Nikhil Bhandari has been my daughter's pediatrician for the past 6 years. He is caring, patient, and always takes the time to listen to our concerns. His prompt availability, clear guidance, and dedication have made him a trusted part of our family's healthcare journey. We feel fortunate to have such a skilled and compassionate doctor."
+        </p>
+        <div class="flex flex-col items-center gap-1 pt-2 border-t border-[#c99ba3]/10 text-center">
+          <div class="font-semibold text-[#2e2a28] text-sm sm:text-base">Malecia Vadassery</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-2xl p-4 sm:p-5 md:p-6 border border-[#c99ba3]/15 shadow-[0_4px_24px_rgba(201,155,163,0.13)] h-full flex flex-col gap-3 sm:gap-4 transition-all duration-300 hover:shadow-[0_8px_30px_rgba(201,155,163,0.2)]">
+        <div class="flex justify-center -mt-2 sm:-mt-3">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img src="/images/nysa_and_araina.jpeg" alt="Noel Fernandes" class="w-full h-full object-cover object-top">
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-1 text-[#c99ba3] text-xs sm:text-sm">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="text-[#5f5b58] text-xs sm:text-sm leading-relaxed text-center">
+          "We have trusted Dr. Nikhil for the past 11 years. His prompt guidance, caring nature, and clear explanations always reassure us. Our daughters are comfortable with him, and we know they are in safe hands."
+        </p>
+        <div class="flex flex-col items-center gap-1 pt-2 border-t border-[#c99ba3]/10 text-center">
+          <div class="font-semibold text-[#2e2a28] text-sm sm:text-base">Noel Fernandes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- CTA BANNER -->
     <section
@@ -2451,7 +2330,7 @@
                 class="bg-[#e3dfde] rounded-2xl px-4 py-3 sm:px-5 sm:py-4 shadow-lg w-[240px] sm:w-[280px] md:w-[250px] lg:w-[270px] flex items-center justify-center"
               >
                 <img
-                  src="/images/drLOGO.jpeg"
+                  src="/images/drLogo.jpg"
                   alt="Dr Nikhil Logo"
                   class="w-full h-auto object-contain"
                 />
@@ -3179,121 +3058,7 @@
         });
       });
 
-      // TESTIMONIAL SLIDER
-      (function () {
-        const track = document.getElementById("testimonial-track");
-        const dotsContainer = document.getElementById("testimonial-dots");
-        const prevBtn = document.getElementById("testimonial-prev");
-        const nextBtn = document.getElementById("testimonial-next");
-        if (!track) return;
-
-        const cards = track.querySelectorAll(".testimonial-card");
-        const total = cards.length;
-        let current = 0;
-        let autoTimer = null;
-
-        function getVisible() {
-          const w = window.innerWidth;
-          if (w >= 1024) return 3;
-          if (w >= 768) return 2;
-          return 1;
-        }
-
-        function maxIndex() {
-          return Math.max(0, total - getVisible());
-        }
-
-        function buildDots() {
-          dotsContainer.innerHTML = "";
-          const count = maxIndex() + 1;
-          for (let i = 0; i < count; i++) {
-            const d = document.createElement("button");
-            d.className = "testimonial-dot" + (i === current ? " active" : "");
-            d.setAttribute("aria-label", "Go to slide " + (i + 1));
-            d.addEventListener("click", () => goTo(i));
-            dotsContainer.appendChild(d);
-          }
-        }
-
-        function updateDots() {
-          dotsContainer.querySelectorAll(".testimonial-dot").forEach((d, i) => {
-            d.classList.toggle("active", i === current);
-          });
-        }
-
-        function goTo(index) {
-          current = Math.max(0, Math.min(index, maxIndex()));
-          const pct = (100 / getVisible()) * current;
-          track.style.transform = "translateX(-" + pct + "%)";
-          updateDots();
-        }
-
-        function next() {
-          goTo(current >= maxIndex() ? 0 : current + 1);
-        }
-        function prev() {
-          goTo(current <= 0 ? maxIndex() : current - 1);
-        }
-
-        function startAuto() {
-          stopAuto();
-          autoTimer = setInterval(next, 4500);
-        }
-        function stopAuto() {
-          if (autoTimer) {
-            clearInterval(autoTimer);
-            autoTimer = null;
-          }
-        }
-
-        prevBtn.addEventListener("click", () => {
-          stopAuto();
-          prev();
-          startAuto();
-        });
-        nextBtn.addEventListener("click", () => {
-          stopAuto();
-          next();
-          startAuto();
-        });
-
-        // Touch / swipe support
-        let touchStartX = 0;
-        track.addEventListener(
-          "touchstart",
-          (e) => {
-            touchStartX = e.touches[0].clientX;
-          },
-          { passive: true },
-        );
-        track.addEventListener(
-          "touchend",
-          (e) => {
-            const diff = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 40) {
-              stopAuto();
-              diff > 0 ? next() : prev();
-              startAuto();
-            }
-          },
-          { passive: true },
-        );
-
-        // Init
-        buildDots();
-        goTo(0);
-        startAuto();
-
-        // Rebuild on resize
-        let resizeTimer;
-        window.addEventListener("resize", () => {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(() => {
-            buildDots();
-            goTo(Math.min(current, maxIndex()));
-          }, 200);
-        });
-      })();
+      
     </script>
   </body>
 </html>
